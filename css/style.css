@@ -1,0 +1,21 @@
+.header-nav {
+    background-color: #000000;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar-default {
+    background-color: #ffff;
+    border: 1px solid #ECECEC;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #ffff;
+    border-bottom: 4px solid #f7b300;
+}
