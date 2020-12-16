@@ -1,21 +1,42 @@
 .header-nav {
-    background-color: #000000;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+	background-color: #000000;
+	text-align: center;
+	padding: 10px;
+}
+.w-100 {
+	width: 100%;
+}
+.news-name {
+	font-size: 20px;
+	color: #000000;
+	line-height: 25px;
+	padding-top: 15px;
+}
+.news-date {
+	font-size: 14px;
+	color: #666666;
+	line-height: 25px;
+	padding-bottom: 30px;
+}
+footer {
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	padding: 5px;
 }
 
+/* CUSTOM Bootstrap */
 .navbar-nav {
-    display: inline-block;
+	display: inline-block;
     float: none;
 }
-
 .navbar-default {
-    background-color: #ffff;
+	background-color: #fff;
     border: 1px solid #ECECEC;
 }
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    background-color: #ffff;
-    border-bottom: 4px solid #f7b300;
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+	background-color: #fff;
+    border-bottom: 4px solid #F7B300;
 }
