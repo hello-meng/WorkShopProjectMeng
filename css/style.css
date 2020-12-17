@@ -18,14 +18,23 @@
 	line-height: 25px;
 	padding-bottom: 30px;
 }
+.news-detail-img {
+	padding-top: 40px;
+}
 .news-detail {
-	margin: auto;
+	padding: 30px 60px 60px 60px;
 }
 .news-detail h2 {
 	font-weight: 700;
     font-size: 24px;
-	padding-top: 20px;
+	/* padding-top: 20px; */
 	color: #000000;
+}
+.news-detail-text {
+	color: #666666;
+	font-size: 14px;
+	font-weight: 400;
+	padding-bottom: 25px;
 }
 footer {
 	background-color: #000;
