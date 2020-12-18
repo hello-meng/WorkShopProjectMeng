@@ -1,3 +1,0 @@
-1. Appserve (หรือ Xampp)
-2. Boostart Version 3
-3. Lunacy
