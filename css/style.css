@@ -7,6 +7,28 @@
 	width: 100%;
 }
 
+/*home*/
+.carousel-control {
+	width: 10%;
+}
+.caption-slide {
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	top: 18%;
+	width: 500px;
+	text-align: left;
+}
+.caption-slide h1 {
+	font-size: 50px;
+	font-weight: 600;
+	color: #fff;	
+}
+.caption-slide p {
+	font-size: 15px;
+	color: #fff;	
+}
+
 /*news*/
 .news-name {
 	font-size: 20px;
@@ -51,6 +73,7 @@
 	font-size: 14px;
 	padding-left: 60px;
 	padding-right: 60px;
+	padding-bottom: 30px;
 }
 .contact-form {
 	padding-bottom: 50px;
@@ -63,9 +86,13 @@
 }
 .form-rounded {
 	border-radius: 0rem;
-	}
+}
+.form-custom {
+	height: 50px;
+	line-height: 2.5;
+}
 textarea {
-	resize: none;
+	resize: none;	
 }
 .btn-custom {
 	background-color: #f7b300;; 
@@ -77,6 +104,7 @@ textarea {
 	display: inline-block;
 	font-size: 16px;
 	font-weight: 700;
+	border-radius: 0px;
 }
 .contact-desc {
 	padding-bottom: 20px;
@@ -105,6 +133,14 @@ textarea {
 .home-text-inside {
 	padding-top: 80px;
 	padding-bottom: 140px;
+}
+.home-ournews {
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+.home-carsreccom {
+	padding-top: 40px;
+	padding-bottom: 60px;
 }
 
 /*about*/
