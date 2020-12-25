@@ -13,12 +13,8 @@
     <!-- css -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/newdetail.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-
-    <!-- css slide -->
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Pragati+Narrow:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -57,21 +53,42 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12">
                     <!-- <img src="img/news/image-slide.png" class="w-100 news-detail-img"> -->
-                    
-                    <div class="my-slide-wrap">
-                        <div class="my-slider news-detail-img">
-                            <div class="slide-item"><img src="img/news/image-slide.png" alt=""></div>
-                            <div class="slide-item"><img src="img/news/image-slide.png" alt=""></div>
-                            <div class="slide-item"><img src="img/news/image-slide.png" alt=""></div>
-                            <div class="slide-item"><img src="img/news/image-slide.png" alt=""></div>
-                            <div class="slide-item"><img src="img/news/image-slide.png" alt=""></div>
-                        </div>       
-                        <span class="paging-info"></span>
-                        <span class="verticalx">|</span>               
+
+                    <div class="slideshow-container news-detail-img">
+
+                        <div class="mySlides fadex">
+                            <div class="numbertext">1 / 5</div>
+                            <img src="img/news/image-slide.png" class="w-100">
+                        </div>
+
+                        <div class="mySlides fadex">
+                            <div class="numbertext">2 / 5</div>
+                            <img src="img/news/image-slide.png" class="w-100">
+                        </div>
+
+                        <div class="mySlides fadex">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="img/news/image-slide.png" class="w-100">
+                        </div>
+
+                        <div class="mySlides fadex">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="img/news/image-slide.png" class="w-100">
+                        </div>
+
+                        <div class="mySlides fadex">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="img/news/image-slide.png" class="w-100">
+                        </div>
+                        
+                        <div class="textpg">|</div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
                     </div>
 
+                    
                 </div>
-
                 <div class="col-xs-12 col-sm-12 news-detail">   
                     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacus lac</h2>
                     <p class="news-date">Updated date: March 18, 2019</p>
@@ -97,42 +114,37 @@
     </footer>
     <!-- END FOOTER -->
 
-    
-
-
     <!-- JS -->
-    <script src="js/jquery-351.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
+    <script src="js/bootstrap.min.js"></script>
 
-            var $status = $('.paging-info');
-            var $slickElement = $('.my-slider');
-
-            $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-            //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
-            var i = (currentSlide ? currentSlide : 0) + 1;
-            $status.text(i + '/' + slick.slideCount);
-            });
-
-
-            $('.my-slider').slick({
-				infinite: true,
-				autoplay: true,
-                autoplaySpeed: 2000,
-                //prevArrow: '<button type="button" class="">Previous</button>', 
-                //nextArrow: '<button type="button" class="">Next</button>',
-                prevArrow: '<span class="arw-prev"><img src="img/icon/slide-left.svg"></span>', 
-                nextArrow: '<span class="arw-next"><img src="img/icon/slide-right.svg"></span>',
-
-            });
-
-        });
-
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            // var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            //for (i = 0; i < dots.length; i++) {
+            //    dots[i].className = dots[i].className.replace(" active", "");
+            //}
+            slides[slideIndex-1].style.display = "block";  
+            //dots[slideIndex-1].className += " active";
+        }
     </script>
-
-
 
 </body>
 </html>

@@ -3,6 +3,13 @@ body {
 	font-family: 'Kanit', sans-serif; */
 	font-family: 'Pragati Narrow','Kanit', sans-serif;
 }
+h1, h2, h3, h4, h5 
+{
+	font-family: 'Pragati Narrow', sans-serif;
+}
+p, p.a, span {
+	font-family: 'Roboto','Kanit', sans-serif;
+}
 .header-nav {
 	background-color: #000000;
 	text-align: center;
@@ -57,6 +64,63 @@ body {
 	position:absolute;
 	top:50%;
 	width: 30px;
+}
+.home-bg {
+	height: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+.home-ournews {
+	padding-top: 15px;
+	padding-bottom: 40px;
+}
+.home-ournews h2 {
+	padding-bottom: 20px;
+	color: #000;
+	font-size: 52px;
+	font-weight: 700;
+}
+.home-carsreccom {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.home-carsreccom h2 {
+	padding-bottom: 20px;
+	color: #000;
+	font-size: 52px;
+	font-weight: 700;
+}
+.home-pad {
+	padding-top: 30px;
+}
+.ournew-card img {
+	padding-bottom: 20px;
+}
+.ournew-heads h3 {
+	display: inline;
+	color: black;
+	font-size: 24px;
+}
+.ournew-heads .ournews-new {
+	color: #F7B300;
+	font-size:  14px;
+	border: 2px;
+	border-style: solid;
+	border-color: #F7B300;
+	padding: 2px;
+	line-height: 0;
+	margin-right: 5px;
+}
+.ournew-date {
+	color: #666666;
+	font-size: 14px;
+	padding-top: 5px;
+}
+.ournew-detail {
+	color: #666666;
+	font-size: 14px;
+	padding-top: 5px;
 }
 
 
@@ -150,29 +214,8 @@ textarea {
 	/* padding-left: 20px;	 */
 }
 
-/*home*/
-.home-bg {
-	/* background : linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url("../img/about/bg-about.png"); */
-	/* background : url("../img/home/bg-home.png"); */
-	/* height: 100%;  */
-	/* height : 313px; */
-	height: auto;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top center;
-}
-.home-text-inside {
-	padding-top: 80px;
-	padding-bottom: 140px;
-}
-.home-ournews {
-	padding-top: 40px;
-	padding-bottom: 60px;
-}
-.home-carsreccom {
-	padding-top: 40px;
-	padding-bottom: 60px;
-}
+
+
 
 /*about*/
 .about-bg {
@@ -250,3 +293,4 @@ footer {
 	background-color: #fff;
     border-bottom: 4px solid #F7B300;
 }
+
