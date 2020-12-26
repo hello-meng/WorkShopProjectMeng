@@ -10,9 +10,14 @@
     <title>QCS Meng</title>
     <link href="img/favicon.ico" rel="shortcut icon" >
 
-    <!-- css -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/carousel.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css" >
+		<!-- css slide -->
+		<link rel="stylesheet" type="text/css" href="css/slick.css">
+		<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Pragati+Narrow:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -23,7 +28,7 @@
     <!-- HEADER -->
     <header>
         <div class="header-nav">
-            <img src="img/logo.png">
+            <a href="index.html"><img src="img/logo.png"></a>
         </div>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -47,43 +52,54 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 text-center">
-                    <h1>Find new cars and second hand cars</h1>
+                    <div class="used-head-caption">
+                        <h1>Find new cars and second hand cars</h1>
+                    </div>
                 </div>
             </div>
             <div class="row">
+
                 <!-- combo box -->
-                <div class="col-xs-12 col-sm-12 text-center">
-                    <div class="">
-                        <form action="#">
-
-                            <!-- brand -->
-                            <select class="mdb-select md-form" id="a1">
-                                <option value="" disabled selected>Choose your option</option>
+                <form>
+                    <div class="col-xs-12 col-sm-3">  
+                        <!-- brand -->
+                        <div class="custom-combobox" style="width:200px;">
+                            <select id="a1">
+                                <option value="" disabled selected>Select Brand</option>
                                 <option value="1">Option 1</option>
                                 <option value="2">Option 2</option>
                                 <option value="3">Option 3</option>
                             </select>
-
-                            <!-- model -->
-                            <select class="mdb-select md-form"  id="a2">
-                                <option value="" disabled selected>Choose your option</option>
-                                <option value="1">Option 1</option>
-                                <option value="2">Option 2</option>
-                                <option value="3">Option 3</option>
-                            </select>
-
-                            <!-- year -->
-                            <select class="mdb-select md-form"  id="a2">
-                                <option value="" disabled selected>Choose your option</option>
-                                <option value="1">Option 1</option>
-                                <option value="2">Option 2</option>
-                                <option value="3">Option 3</option>
-                            </select>
-                            
-                            <input type="submit" value="Submit">
-                        </form>
+                        </div>
                     </div>
-                </div>
+                    <div class="col-xs-12 col-sm-3">                     
+                        <!-- model -->
+                        <div class="custom-combobox" style="width:200px;">
+                            <select id="a2">
+                                <option value="" disabled selected>Select Model</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3"> 
+                        <!-- year -->
+                        <div class="custom-combobox" style="width:200px;">
+                            <select id="a3">
+                                <option value="" disabled selected>Select Year</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3"> 
+                        <!-- button -->
+                        <button type="button" class="btn btn-custom usecar-btn">Search now</button>
+                    </div>
+                </form>
+
             </div>
         </div>
     </section>
@@ -94,37 +110,137 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12">
                     <!-- count item -->
-                    <div>4 Porsche available</div>
+                    <div class="used-item-count">
+                        <p>4 Porsche available</p>
+                    </div>
                 </div>
             </div>
+
+            <!-- card car -->
             <div class="row">
                 <div class="col-xs-12 col-sm-12">
-
-                    <!-- card car -->
-                    <div>
+                    <div class="usecar-card">
                         <div class="row">
                             <div class="col-xs-5">
                                 <img src="img/car/image-1.png" class="w-100">
                             </div>
                             <div class="col-xs-7">
-                                <img src="img/car/logo.svg">
-                                <h2>911 Turbo S Exclusive Series</h2>
-                                <p>ปี : 2017</p>
-                                <h1>33,900,000 THB</h1>
-                                <a class="btn btn-custom" href="#" role="button">View more<span class="btn-custom-svg"><img src="img/icon/icon-right-2-b.svg"></span></a>
+                                <div class="usecar-detail">
+                                    <div class="usecar-carname">
+                                        <img src="img/car/logo.svg">
+                                        <h2>911 Turbo S Exclusive Series</h2>
+                                        <p>ปี : 2017</p>
+                                    </div>                                
+                                    <h2>33,900,000 THB</h2>
+                                    <a class="btn btn-custom" href="cardetail.html" role="button">View more<span class="btn-custom-svg"><img src="img/icon/icon-right-2-b.svg"></span></a>
+                                </div>
                             </div>
                         </div>                        
-                    </div>                    
-                    <!-- end card car -->
-
+                    </div>                  
                 </div>
             </div>
+            <!-- end card car -->
+
+            <!-- line -->
             <div class="row">
                 <div class="col-xs-12 col-sm-12">
-                    <!-- line -->
+                    
                     <div class="car-recom-line"></div>
                 </div>
             </div>
+
+            <!-- card car -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="usecar-card">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <img src="img/car/image-2.png" class="w-100">
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="usecar-detail">
+                                    <div class="usecar-carname">
+                                        <img src="img/car/logo.svg">
+                                        <h2>911 Turbo S Exclusive Series</h2>
+                                        <p>ปี : 2017</p>
+                                    </div>                                
+                                    <h2>33,900,000 THB</h2>
+                                    <a class="btn btn-custom" href="cardetail.html" role="button">View more<span class="btn-custom-svg"><img src="img/icon/icon-right-2-b.svg"></span></a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>                  
+                </div>
+            </div>
+            <!-- end card car -->
+
+            <!-- line -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    
+                    <div class="car-recom-line"></div>
+                </div>
+            </div>            
+
+            <!-- card car -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="usecar-card">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <img src="img/car/image-3.png" class="w-100">
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="usecar-detail">
+                                    <div class="usecar-carname">
+                                        <img src="img/car/logo.svg">
+                                        <h2>911 Turbo S Exclusive Series</h2>
+                                        <p>ปี : 2017</p>
+                                    </div>                                
+                                    <h2>33,900,000 THB</h2>
+                                    <a class="btn btn-custom" href="cardetail.html" role="button">View more<span class="btn-custom-svg"><img src="img/icon/icon-right-2-b.svg"></span></a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>                  
+                </div>
+            </div>
+            <!-- end card car -->
+
+            <!-- line -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    
+                    <div class="car-recom-line"></div>
+                </div>
+            </div>
+            
+            <!-- card car -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="usecar-card">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <img src="img/car/image-4.png" class="w-100">
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="usecar-detail">
+                                    <div class="usecar-carname">
+                                        <img src="img/car/logo.svg">
+                                        <h2>911 Turbo S Exclusive Series</h2>
+                                        <p>ปี : 2017</p>
+                                    </div>                                
+                                    <h2>33,900,000 THB</h2>
+                                    <a class="btn btn-custom" href="cardetail.html" role="button">View more<span class="btn-custom-svg"><img src="img/icon/icon-right-2-b.svg"></span></a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>                  
+                </div>
+            </div>
+            <!-- end card car -->
+
+            
         </div>
     </section>
     <!-- END CONTANT -->
@@ -136,6 +252,11 @@
     <!-- END FOOTER -->
 
     <!-- JS -->
+    <script src="js/jquery-351.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    
+    
+
 </body>
 </html>

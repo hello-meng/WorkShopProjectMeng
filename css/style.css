@@ -18,6 +18,9 @@ p, p.a, span {
 .w-100 {
 	width: 100%;
 }
+a:hover, a:focus {
+	text-decoration: none;
+}
 .btn-custom {
 	position: relative;
 	background-color: #f7b300;; 
@@ -36,8 +39,9 @@ p, p.a, span {
 	top : 15px;
 	right: 15px;
 }
-
-
+textarea {
+	resize: none;	
+}
 
 /*home*/
 .carousel-control {
@@ -105,6 +109,7 @@ p, p.a, span {
 .new-yellow {
 	color: #F7B300;
 	font-size:  14px;
+	font-weight: 600;
 	border: 2px;
 	border-style: solid;
 	border-color: #F7B300;
@@ -147,9 +152,6 @@ p, p.a, span {
 	color: #666666;
 	line-height: 25px;
 	padding-bottom: 30px;
-}
-a:hover {
-	text-decoration: none;
 }
 
 /*news detail*/
@@ -200,11 +202,6 @@ a:hover {
 	height: 50px;
 	line-height: 2.5;
 }
-textarea {
-	resize: none;	
-}
-
-
 .contact-desc {
 	position: relative;
 	padding-left: 50px;
@@ -221,8 +218,6 @@ textarea {
 	font-weight: 700;  
 	padding-bottom: 20px;
 }
-
-
 
 /*about*/
 .about-bg {
@@ -259,7 +254,6 @@ textarea {
 	font-size: 32px;
 	color: #212121;
 	padding-bottom: 40px;
-
 }
 .about-detail-p {
 	font-size: 16px;
@@ -274,12 +268,122 @@ textarea {
 	margin-top: 70px;
 }
 
+/*car detail*/
+.cardet-carname {
+	position: relative;
+	padding-left: 90px;
+	padding-bottom: 20px;
+}
+.cardet-carname img {
+	position: absolute;
+	top: 5px;
+	left: 0px;
+}
+.cardet-carname h2 {
+	font-size: 38px;
+	font-weight: 700;
+	color: #000;
+}
+.cardet-carname p {
+	font-size: 19px;
+	color: #000;
+}
+.cardet-price img {
+	padding-left: 15px;	
+}
+.cardet-price h2 {
+	font-size: 32px;
+	font-weight: 700;
+	color: #000;
+}
+.cardet-price span {
+	font-size: 18px;
+	color: #000;
+	font-family: 'Pragati Narrow', sans-serif;
+}
+.cardet-detail h3 {
+	font-size: 24px;
+	font-weight: 700;
+	color: #000;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.cardet-detail p {
+	font-size: 14px;
+	color: #666666;
+	padding-bottom: 20px;
+}
+.cardet-detail img {
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+/*used car*/
+.used-head-caption {
+	font-size: 38px;
+	font-weight: 700;
+	color: #000;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+.used-form {
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+.used-form form {
+	padding-top: 10px;
+}
+.used-item-count {
+	color: #A0A0A0;
+	font-size: 14px;
+	padding-top: 50px;
+	padding-bottom: 0px;
+}
+.usecar-card {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.usecar-detail {
+	padding-left: 30px;
+}
+.usecar-detail > h2 {
+	font-size: 32px;
+	font-weight: 700;
+	color: #000;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.usecar-carname {
+	position: relative;
+	padding-left: 90px;
+	/* padding-bottom: 20px; */
+}
+.usecar-carname h2 {
+	font-size: 28px;
+	font-weight: 700;
+	color: #000;
+}
+.usecar-carname p {
+	font-size: 19px;
+	color: #000;
+	font-family: 'Pragati Narrow', sans-serif;
+}
+.usecar-carname img {
+	position: absolute;
+	top: 5px;
+	left: 0px;
+}
+.usecar-btn {
+	padding: 10px 30px 10px 30px;
+}
+
 /*footer*/
 footer {
 	background-color: #000;
 	color: #fff;
 	text-align: center;
 	padding: 5px;
+	margin-top: 40px;
 }
 
 /* CUSTOM Bootstrap */
