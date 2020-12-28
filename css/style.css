@@ -36,7 +36,7 @@ a:hover, a:focus {
 }
 .btn-custom-svg {
 	position: absolute;	
-	top : 15px;
+	top : 14px;
 	right: 15px;
 }
 textarea {
@@ -320,7 +320,7 @@ textarea {
 }
 
 /*used car*/
-.used-head-caption {
+.used-head-caption h1 {
 	font-size: 38px;
 	font-weight: 700;
 	color: #000;
@@ -375,7 +375,7 @@ textarea {
 	left: 0px;
 }
 .usecar-btn {
-	padding: 10px 30px 10px 30px;
+	padding: 10px 40px 10px 40px;
 }
 
 /*footer*/
@@ -405,4 +405,3 @@ footer {
 	background-color: #fff;
     border-bottom: 4px solid #F7B300;
 }
-
