@@ -42,6 +42,14 @@ a:hover, a:focus {
 textarea {
 	resize: none;	
 }
+button:active {
+    outline: none;
+    border: none;
+    }
+select:focus,button:focus {
+	outline: 0;
+}
+
 
 /*home*/
 .carousel-control {
