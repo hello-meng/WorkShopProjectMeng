@@ -355,6 +355,10 @@ select:focus,button:focus {
 .usecar-card {
 	padding-top: 30px;
 	padding-bottom: 30px;
+	border-bottom: 1px solid #4c4c4c;
+}
+.usecar-card:last-child {
+	border-bottom: none;
 }
 .usecar-detail {
 	padding-left: 30px;
