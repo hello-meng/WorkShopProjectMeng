@@ -387,6 +387,8 @@ select:focus,button:focus {
 }
 .usecar-carname img {
 	position: absolute;
+	width: 65px;
+	height: 65px;
 	top: 5px;
 	left: 0px;
 }
