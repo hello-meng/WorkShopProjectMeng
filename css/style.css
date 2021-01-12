@@ -52,10 +52,23 @@ select:focus,button:focus {
 
 
 /*home*/
+.btn-custom-home {
+	position: relative;
+	background-color: #f7b300;; 
+	border: none;
+	color: #000;
+	padding: 15px 40px 15px 30px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 0px;
+	text-align: center;
+}
 .carousel-control {
 	width: 10%;
 }
- .caption-slide {
+.caption-slide {
 	position: absolute;
 	left: 10%;
 	right: 10%;
